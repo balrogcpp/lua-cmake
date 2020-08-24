@@ -112,9 +112,6 @@ if ( LUA_USE_READLINE )
 endif ( )
 
 ## SOURCES
-# Generate luaconf.h
-configure_file ( src/luaconf.h.in ${CMAKE_CURRENT_BINARY_DIR}/luaconf.h )
-
 # Sources and headers
 include_directories ( src ${CMAKE_CURRENT_BINARY_DIR} )
 set ( SRC_CORE src/lapi.c src/lcode.c src/lctype.c src/ldebug.c src/ldo.c src/ldump.c
